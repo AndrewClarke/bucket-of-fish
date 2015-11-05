@@ -7,10 +7,10 @@ def similarity(str1, str2, options = { }, &cleaner)
   width = options[:width] || 2
 
   # splitter can be a Regexp (defaults to any non-word) or a proc/lambda for extra power.
-  # Capture as both, then replace splitter with a lambda-wrap of re if re is a pattern.
   # The caller can split on strict whitespace by passing /\s+/, whereas the default of
   # /\W+/ basically only leaves alpha-num. "Apostrophe's" (sic) could be an issue...
   #
+  # Capture as both, then replace splitter with a lambda-wrap of re if re is a pattern.
   re = splitter = options[:splitter] || /\W+/
   splitter = lambda { |str| str.split(re) } if re.class == Regexp
 
