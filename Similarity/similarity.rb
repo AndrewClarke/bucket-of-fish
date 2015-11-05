@@ -26,7 +26,8 @@ def similarity(str1, str2, options = { }, &cleaner)
   pieces1, pieces2 = smush.call(str1), smush.call(str2)
 
   n = (l1 = pieces1.length) + (l2 = pieces2.length)
-  return 1.0 if n == 0  # Two empty strings match perfectly. NOTE: all-blank strings also qualify.
+  # Two empty strings match perfectly. NOTE: strings full of separator also appear empty.
+  return 1.0 if n == 0
 
   # Count matching pieces. Exploit the sorted lists returned from smush() to step through them both.
   i1 = i2 = k = 0
