@@ -1,7 +1,9 @@
 
 * A Smarter String Similarity routine.
 
-The Ruby version is ahead of the Perl version, which needs to play catch-up.
+NOTE: this is way better than Levenshtein and friends for realistic text.
+
+NOTE: The Ruby version is ahead of the Perl version which needs to play catch-up.
 
 Directly inspired by a
 [Stack Overflow Q&A](http://stackoverflow.com/questions/653157/a-better-similarity-ranking-algorithm-for-variable-length-strings)
