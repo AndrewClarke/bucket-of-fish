@@ -1,5 +1,5 @@
 
-* A Smarter String Similarity routine.
+# A Smarter String Similarity routine.
 
 NOTE: this is way better than Levenshtein and friends for realistic text.
 
