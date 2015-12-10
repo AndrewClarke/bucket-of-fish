@@ -33,7 +33,7 @@ are all equivalent.
 Actually, the default /\W+/ means that punctuation will also be ignored.
 
 Read the referenced Simon White article to understand the science.
-As for parameters, the splitter (default /\W+/ which means 'non-word characters'))
+As for parameters, the splitter (default /\W+/ which means 'non-word characters')
 allows you to choose how to break up the string into words or packets,
 and the default width of 2 refers to the size of the particles
 that each word is split up into. The article uses particles of length 2,
@@ -42,7 +42,7 @@ but you might find it useful to go for bigger particle sizes depending on your d
 The process of canonicalisation refers to removing junk or
 other characters you don't care about.
 You might consider punctuation characters are worth keeping, for example.
-Remember that the optional-but-defaulted block is ran first upon each string,
+Remember that the optional-but-defaulted block is first applied to each string,
 then the string is broken into words using the splitter,
 and finally the algorithm performs it's magic to rate the difference
 between the two sets of cleaned-up words.
